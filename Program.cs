@@ -23,5 +23,3 @@ namespace titler
     }
   }
 }
-
-// make words adjective and nouns members either fields or properties
