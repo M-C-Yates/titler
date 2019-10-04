@@ -6,10 +6,8 @@ namespace titler
   {
     static void Main(string[] args)
     {
-      for (int i = 0; i < 101; i++)
-      {
-        Console.WriteLine($"{RandName()}");
-      }
+      int nameAmount = int.Parse(args[0]);
+      LogNames(nameAmount);
     }
 
     private static string RandName()
@@ -20,6 +18,14 @@ namespace titler
       int nounIndex = rand.Next(0, words.Nouns.Length);
       string name = $"{words.Adjectives[adjectiveIndex]} {words.Nouns[nounIndex]}";
       return name;
+    }
+
+    private static void LogNames(int amount = 10)
+    {
+      for (int i = 1; i <= amount; i++)
+      {
+        Console.WriteLine($"{RandName()}");
+      }
     }
   }
 }
