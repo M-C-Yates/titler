@@ -210,6 +210,7 @@ namespace titler
     "Archive",
     "Archipelago",
     "Atoll",
+    "Atrium",
     "Aurora",
     "Avenue",
     "Backwater",
